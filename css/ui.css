@@ -1,0 +1,35 @@
+:root {
+	--fonte: Calibri;
+	--bg-body: rgb(58, 60, 52);
+	--bg-header: rgb(55, 55, 55);
+	--fg-button: rgb(160, 160, 160);
+	--gold: rgb(245, 166, 35);
+	--green: rgb(110, 176, 39);
+	--blue: rgb(74, 144, 226);
+	--orange: rgb(244, 112, 35);
+	--white: rgb(235, 235, 235);
+	--bg-btn-add: var(--orange);
+	--bg-btn-remsel: var(--orange);
+	--btn-radius: 4px;
+}
+
+.ui-iconbtn, .ui-iconbtn:hover, .ui-iconbtn:focus, .ui-iconbtn:active {
+ 	color: var(--fg-button); 
+	background-color: transparent; 
+ 	border: 1px solid var(--fg-button);
+	border-radius: var(--btn-radius);
+	box-shadow: none !important;
+	outline: none !important; 
+}
+
+.ui-iconbtn:hover {
+ 	color: var(--white); 
+ 	background-color: var(--bg-btn-remsel);
+ 	border: 1px solid var(--bg-btn-remsel);
+}
+
+.ui-iconbtn .glyphicon {
+	float: left;
+	padding-right: 6px; 
+	margin-top: 1px;
+}

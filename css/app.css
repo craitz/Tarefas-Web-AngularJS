@@ -1,0 +1,220 @@
+:root {
+	--fonte: Calibri;
+	--bg-body: rgb(58, 60, 52);
+	--bg-header: rgb(55, 55, 55);
+	--fg-button: rgb(160, 160, 160);
+	--gold: rgb(245, 166, 35);
+	--green: rgb(110, 176, 39);
+	--blue: rgb(74, 144, 226);
+	--orange: rgb(244, 112, 35);
+	--white: rgb(235, 235, 235);
+	--bg-btn-add: var(--orange);
+	--bg-btn-remsel: var(--orange);
+	--btn-radius: 4px;
+}
+
+body {
+	font-family: var(--fonte);
+	background-color: var(--bg-body);
+}
+
+table {
+	border:1px solid rgb(80, 80, 80);
+	margin-top: 15px;
+}
+
+td,th {
+	border:none !important;
+}
+
+tr {
+}
+
+.panel-default {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: rgb(47, 49, 41);
+	border:1px solid rgb(80, 80, 80);
+	box-shadow: none;
+}
+
+.panel-heading {
+    background-color: rgb(70, 70, 70) !important;
+    color: var(--fg-button) !important;
+    font-size: 18px;
+    font-weight: bold;
+    border:1px solid rgb(90, 90, 90) !important;
+	 box-shadow: none;
+}
+
+.cr-thead{
+    background-color: var(--bg-header);
+}
+
+.bt-sort, .bt-sort:hover, .bt-sort:focus, .bt-sort:active {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-radius: var(--btn-radius) !important;
+	box-shadow: none;
+	outline: none !important; 
+	border: 1px solid var(--fg-button);
+	color: var(--fg-button);
+	background-color: transparent; 
+   font-weight: bold;
+} 
+
+.bt-sort:hover {
+	background-color: var(--fg-button); 
+	color: var(--bg-header);
+   font-weight: bold;
+}
+
+.btn-remove-sel {
+ 	float: right;
+ 	margin-right: 10px;
+}
+
+.btn-adiciona {
+ 	float: right;
+}
+
+.btn-adiciona:hover {
+ 	color: var(--white); 
+ 	background-color: var(--bg-btn-add);
+ 	border: 1px solid var(--bg-btn-add);
+}
+
+.btn-salvar {
+ 	color: var(--orange); 
+   height: 22px;
+	padding: 0px;
+ 	margin-top: 5px;
+}
+
+.badge {
+ 	background-color: var(--orange) !important; 
+	margin-left: 10px;
+}
+
+.input-novo {
+	background-color: rgb(180, 180, 180);
+	border-radius: 20px;
+	height: 30px;	
+}
+
+.nova-tarefa {
+ 	outline: thin solid var(--orange); 
+	background-color: rgb(100, 100, 100);
+}
+
+.novo-campo {
+	margin-top: 8px;		
+}
+
+.btn-busca {
+	width: 345px;
+}
+
+.tf-busca, .tf-busca:hover, .tf-busca:focus, .tf-busca:active {
+	color: rgb(169, 160, 160);
+	background: url(../lib/images/search.png);
+	padding-left: 35px !important;
+	border-radius: 20px !important;   
+	border: 1px solid var(--fg-button);
+	box-shadow: none !important;
+	outline: none !important;
+	height: 30px;
+}
+
+.selecionado {
+	background-color: var(--orange);
+	color: rgb(254, 234, 223);
+}
+
+.tf-a, .tf-a:link, .tf-a:visited, .tf-a:hover, .tf-a:active {
+  color: var(--white);
+  text-decoration: none !important;
+}
+
+.tf-row {
+	background-color: rgb(39, 40, 34);
+	color: var(--fg-button);
+}
+
+.gi-status {
+	padding: 0px;
+	padding-right: 5px;*/
+}
+
+.tool-icon-sel {
+	color: var(--white);
+}
+
+.tool-icon-sel:hover {
+	color: var(--white);
+	color: rgb(186, 75, 10);
+}
+
+.tool-icon {
+	color: rgb(190, 190, 190);
+}
+
+.tool-icon:hover {
+	color: var(--orange); 
+}
+
+.dd-iniciar, .dd-finalizar, .dd-resetar, .btn-status-sel {
+	width: 100px;	
+	border-radius: var(--btn-radius) !important;
+	font-weight: bold;
+}
+.dd-iniciar {
+	background-color: transparent !important;
+	border: 1px solid var(--gold) !important;
+	color: var(--gold) !important;
+}
+
+.dd-iniciar:hover, .dd-iniciar:focus, .dd-iniciar:active {
+	background-color: var(--gold) !important;
+	border: 1px solid var(--gold) !important;
+	color: var(--bg-header) !important;
+}
+
+.dd-finalizar {
+	background-color: transparent !important;
+	border: 1px solid var(--green) !important;
+	color: var(--green) !important;
+}
+
+.dd-finalizar:hover, .dd-finalizar:focus, .dd-finalizar:active {
+	background-color: var(--green) !important;
+	border: 1px solid var(--green) !important;
+	color: var(--bg-header) !important;
+}
+
+.dd-resetar {
+	background-color: transparent !important;
+	border: 1px solid var(--blue) !important;
+	color: var(--blue) !important;
+}
+
+.dd-resetar:hover, .dd-resetar:focus, .dd-resetar:active {
+	background-color: var(--blue) !important;
+	border: 1px solid var(--blue) !important;
+	color: var(--bg-header) !important;
+}
+
+.btn-status-sel {
+	background-color: var(--orange) !important;
+	color: var(--white) !important;
+	border: 1px solid var(--white) !important;
+}
+
+.btn-status-sel:hover, .btn-status-sel:focus, .btn-status-sel:active {
+	background-color: var(--white) !important;
+	border: 1px solid var(--white) !important;
+	color: var(--orange) !important;
+}
